@@ -1,7 +1,54 @@
-/* 
-  反转整数，取值范围[-2^31, 2^32 - 1]，反转，溢出返回0
-*/
+/*
+ * @lc app=leetcode id=7 lang=javascript
+ *
+ * [7] Reverse Integer
+ *
+ * https://leetcode.com/problems/reverse-integer/description/
+ *
+ * algorithms
+ * Easy (25.52%)
+ * Likes:    2540
+ * Dislikes: 3961
+ * Total Accepted:    841.9K
+ * Total Submissions: 3.3M
+ * Testcase Example:  '123'
+ *
+ * Given a 32-bit signed integer, reverse digits of an integer.
+ * 
+ * Example 1:
+ * 
+ * 
+ * Input: 123
+ * Output: 321
+ * 
+ * 
+ * Example 2:
+ * 
+ * 
+ * Input: -123
+ * Output: -321
+ * 
+ * 
+ * Example 3:
+ * 
+ * 
+ * Input: 120
+ * Output: 21
+ * 
+ * 
+ * Note:
+ * Assume we are dealing with an environment which could only store integers
+ * within the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose
+ * of this problem, assume that your function returns 0 when the reversed
+ * integer overflows.
+ * 
+ */
 
+// @lc code=start
+/**
+ * @param {number} x
+ * @return {number}
+ */
 // 转成字符串，然后反转，转回数字，判断是否溢出
 // 这种方法不完全符合题目要求：不用字符串
 var reverse = function(num) {
@@ -33,3 +80,5 @@ var reverse = function(num) {
   }
   return res;
 }
+// @lc code=end
+
