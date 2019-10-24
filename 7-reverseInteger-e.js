@@ -3,7 +3,7 @@
 */
 
 // 转成字符串，然后反转，转回数字，判断是否溢出
-// 这种方法不完全符合题目要求：不用字符串、机器最多支持 2^31 - 1
+// 这种方法不完全符合题目要求：不用字符串
 var reverse = function(num) {
   let isNegative = num < 0;
   const str = String(num).split('').reverse().join('');
